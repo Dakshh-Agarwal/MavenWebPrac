@@ -5,7 +5,7 @@ You will see the Jenkins dashboard.
 ________________________________________
  PART 2 — Create Maven Java Build Job (MavenJava_Build)
 1️ Click “New Item”
-•	Left side → first option.
+•	Left side → first option, 
 2️ Give a name
 Example:
 MavenJava_Build
