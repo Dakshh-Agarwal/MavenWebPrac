@@ -297,6 +297,7 @@ kubectl get pods
 kubectl expose deployment mynginx --type=NodePort --port=80
 kubectl scale deployment mynginx --replicas=4
 kubectl port-forward svc/mynginx 8081:80
+minikube dashboard
 kubectl delete deployment mynginx
 kubectl delete service mynginx
 minikube stop
