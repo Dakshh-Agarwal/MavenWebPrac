@@ -291,23 +291,12 @@ Done.
 ________________________________________
 WEEK 10 — Minikube, Kubernetes, Nagios, AWS (BEGINNER VERSION)
 ________________________________________
-PART 1 — Minikube
-Start Minikube
-Open CMD or PowerShell:
 minikube start
-2️⃣ Create an nginx server
 kubectl create deployment mynginx --image=nginx
-Check:
 kubectl get pods
-3️⃣ Expose the deployment
 kubectl expose deployment mynginx --type=NodePort --port=80
-4️⃣ Scale to 4 pods
-kubectl scale deployment myapp --replicas=4
-->Port forwarding: kubectl port-forward svc/myapp 8081:80
-8081 can be replaced by any
-->Kubernets dashboard 
-Minikube dashboard
-->Stopping
+kubectl scale deployment mynginx --replicas=4
+kubectl port-forward svc/mynginx 8081:80
 kubectl delete deployment mynginx
 kubectl delete service mynginx
 minikube stop
