@@ -398,5 +398,24 @@ Copy your EC2 public IP
 Paste in browser → Your website appears 🎉
 ->Stopping 
 sudo docker ps -> gives container id 
+
+aws
+
+cd Downloads
+
+paste ssh which you have copied
+
+sudo su
+
+sudo apt-get update
+sudo apt-get install docker.io
+git clone LINK FROM WEB PROJECT
+cd Internal(CLONED FOLDER NAME)
+--->
+sudo docker build -t image .
+sudo docker run -d -p 3000:8080 image
+ 
+
+edit inbound rules in security group
 sudo docker stop <container id>
 
